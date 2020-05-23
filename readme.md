@@ -3,6 +3,9 @@ replaceTextNode.js
 
 Find and wrap text nodes in a document.
 
+replaceTextNode(element: HTMLElement, str: String|RegExp, wrapper: String| HTMLElement as string)
+===============
+
 How to use
 ==========
 
