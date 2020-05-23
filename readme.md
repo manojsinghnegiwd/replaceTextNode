@@ -6,7 +6,7 @@ Find and wrap text nodes in a document.
 How to use
 ==========
 
-```
+```html
 <body>
     <div>
         Hello my name is manoj
