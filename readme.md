@@ -1,7 +1,7 @@
 replaceTextNode.js
 ==========
 
-Find and wrap text nodes in a document.
+Find and wrap text nodes in a element.
 
 **`replaceTextNode(element: HTMLElement, str: String|RegExp, wrapper: String| HTMLElement as string)`**
 
