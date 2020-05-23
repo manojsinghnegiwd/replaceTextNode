@@ -1,4 +1,4 @@
-wrapText.js
+replaceTextNode.js
 ==========
 
 Find and wrap text nodes in a document.
@@ -28,6 +28,6 @@ How to use
     </div>
 </body>
 <script>
-    wrapText(document.querySelector("body"), "Manoj", "<a href='manoj'>Manoj</a>")
+    replaceTextNode(document.querySelector("body"), "Manoj", "<a href='manoj'>Manoj</a>")
 </script>
 ```

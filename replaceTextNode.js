@@ -20,7 +20,7 @@ function findTextNodes (element, str) {
     return textNodes
 }
 
-function wrapText (element, str, wrapper) {
+function replaceTextNode (element, str, wrapper) {
     var textNodes = findTextNodes(element, str)
     
     textNodes.forEach(function (textNode) {
@@ -38,4 +38,4 @@ function wrapText (element, str, wrapper) {
     })
 }
 
-window["wrapText"] = wrapText
+window["replaceTextNode"] = replaceTextNode
