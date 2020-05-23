@@ -37,3 +37,5 @@ function wrapText (element, str, wrapper) {
         textNode.replaceWith(fragment)
     })
 }
+
+window["wrapText"] = wrapText

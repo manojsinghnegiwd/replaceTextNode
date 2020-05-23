@@ -28,6 +28,6 @@ How to use
     </div>
 </body>
 <script>
-    wrapText(document.querySelector("body"), /am/gi, "<a href='#'>am</a>")
+    wrapText(document.querySelector("body"), "Manoj", "<a href='manoj'>Manoj</a>")
 </script>
 ```
