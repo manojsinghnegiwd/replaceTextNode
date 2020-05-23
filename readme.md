@@ -1,7 +1,7 @@
 replaceTextNode.js
 ==========
 
-Find and wrap text nodes in a element.
+Find and replace text nodes.
 
 **`replaceTextNode(element: HTMLElement, str: String|RegExp, wrapper: String| HTMLElement as string)`**
 
@@ -14,6 +14,12 @@ Find and wrap text nodes in a element.
 
 How to use
 ==========
+
+Add script in your `<head>` tag.
+
+```html
+<script src="path/to/replaceTextNode.min.js"></script>
+```
 
 ```html
 <body>
