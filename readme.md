@@ -6,6 +6,13 @@ Find and wrap text nodes in a document.
 replaceTextNode(element: HTMLElement, str: String|RegExp, wrapper: String| HTMLElement as string)
 ===============
 
+| Name                  | Default         | value                            | Description  |
+| --------------------- | --------------- | -------------------------------- | ------------- |
+| element               | `undefined`     | `HTMLElement`                    | Parent element to search for text |
+| str                   | `undefined`     | `String|RegExp`                  | String to search for |
+| wrapper               | `undefined`     | `String|HTMLElement as string`   | String or HTMLElement as string which will be inserted in place of string |
+
+
 How to use
 ==========
 
