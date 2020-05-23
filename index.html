@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="./findTextNodes.js"></script>
+    </head>
+    <body>
+        <div>
+            Hello my name is manoj
+            <div>
+                And I am a software <b>Developer <i>Yes I am</i></b>
+            </div>
+        </div>
+        <div>
+            Hello my name is swati
+            <div>
+                And I am a software <b>Developer <i>Yes I am</i></b>
+            </div>
+        </div>
+        <div>
+            Hello my name is manoj
+            <div>
+                And I am a software <b>Designer <i>Yes I am</i></b>
+            </div>
+        </div>
+    </body>
+    <script>
+        var amNodes = findTextNodes(document.querySelector("body"), /am/gi)
+
+        amNodes.forEach(function (textNode) {
+            var linkElement = document.createElement('span')
+            linkElement.innerHTML = textNode.textContent.replace(/am/gi, '<a href="#">am</a>')
+            textNode.replaceWith(linkElement)
+        })
+    </script>
+</html>
