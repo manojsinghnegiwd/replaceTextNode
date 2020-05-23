@@ -19,3 +19,21 @@ function findTextNodes (element, str) {
 
     return textNodes
 }
+
+function wrapText (element, str, wrapper) {
+    var textNodes = findTextNodes(element, str)
+    
+    textNodes.forEach(function (textNode) {
+        var fragment = document.createDocumentFragment()
+        var tempWrapperElement = document.createElement('div')
+        tempWrapperElement.innerHTML = textNode.textContent.replace(str, wrapper)
+        
+        Array.prototype.slice.call(tempWrapperElement.childNodes).forEach(
+            function (child) {
+                fragment.appendChild(child)
+            }
+        )
+
+        textNode.replaceWith(fragment)
+    })
+}

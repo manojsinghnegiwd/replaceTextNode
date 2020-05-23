@@ -1,6 +1,6 @@
 <html>
     <head>
-        <script src="./findTextNodes.js"></script>
+        <script src="./wrapText.js"></script>
     </head>
     <body>
         <div>
@@ -23,12 +23,6 @@
         </div>
     </body>
     <script>
-        var amNodes = findTextNodes(document.querySelector("body"), /am/gi)
-
-        amNodes.forEach(function (textNode) {
-            var linkElement = document.createElement('span')
-            linkElement.innerHTML = textNode.textContent.replace(/am/gi, '<a href="#">am</a>')
-            textNode.replaceWith(linkElement)
-        })
+        wrapText(document.querySelector("body"), /am/gi, "<a href='#'>am</a>")
     </script>
 </html>
